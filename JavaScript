@@ -1,0 +1,19 @@
+// Select the form
+const form = document.getElementById("contactForm");
+
+// Listen for submit event
+form.addEventListener("submit", function (event) {
+    // Stop page refresh
+    event.preventDefault();
+
+    // Optional: get input values
+    const name = form.elements[0].value;
+    const email = form.elements[1].value;
+    const phone = form.elements[2].value;
+
+    // Show alert
+    alert("Thank you!");
+
+    // Clear form after submission
+    form.reset();
+});
